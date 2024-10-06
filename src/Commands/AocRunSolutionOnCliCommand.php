@@ -11,7 +11,7 @@ class AocRunSolutionOnCliCommand extends Command
 
     protected $description = 'Command to import (all) puzzle input(s)';
 
-    public function handle(): mixed
+    public function handle(): void
     {
         $year = $this->argument('year');
         $day = $this->argument('day');
@@ -21,10 +21,10 @@ class AocRunSolutionOnCliCommand extends Command
 
         if (! File::exists($controllerPath)) {
             $this->info("- File ($controllerPath) not found. Ending...");
-            return null;
+            return;
         }
 
         $controller = app()->make("App\Http\Controllers\Year{$year}\Day{$day}Controller");
-        return $controller->handle($part);
+        dd($controller->handle($part));
     }
 }
