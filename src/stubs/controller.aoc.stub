@@ -1,0 +1,36 @@
+<?php
+namespace {{ namespace }};
+ 
+use Illuminate\Support\Facades\Storage;
+use {{ rootNamespace }}Http\Controllers\Controller;
+use Illuminate\Support\Collection;
+use Illuminate\Support\Benchmark;
+use Illuminate\Support\Arr;
+use Illuminate\Support\Str;
+ 
+/**
+ * AOC DAY {{ DummyDay }} YEAR {{ DummyYear }} 
+ */
+class {{ class }} extends Controller
+{
+    public Collection $input;
+
+    public function handle(int $part = 1): mixed
+    {
+        $this->input = collect(explode("\n", trim(Storage::disk('public')->get('puzzleInputs/{{ DummyYear }}/{{ DummyDay }}.txt'))));
+
+        // $this->input = collect(explode("\n", trim("PUT TEST DATA HERE")));
+
+        return $this->{"execute{$part}"}();
+    }
+
+    public function execute1(): void 
+    {
+        dd($this->input);
+    }
+
+    public function execute2(): void 
+    {
+        dd($this->input);
+    }
+}
