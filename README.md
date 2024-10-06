@@ -1,9 +1,11 @@
 
-# Clickup API Laravel Package 
+# Advent of Code Helper 
 
-This Laravel package simplifies the process of connecting to, manipulating, and requesting data from ClickUp, a powerful project management tool. Designed for developers, it provides an easy-to-use interface for integrating ClickUp’s functionalities into Laravel applications. With this package, you can effortlessly manage tasks, projects, and other resources within ClickUp, streamlining your workflow and enhancing productivity.
+Every year, I run into the same issues and start “hacking and cracking” as soon as Advent of Code begins. Not anymore! I wrote this package with two clear goals: to download your personal puzzle inputs and to prepare controller files so you don’t have to start hacking in your web.php.
 
-**My package is currently in an "WIP" phase, so please keep this in mind when using it.**
+This package can download all of your personal puzzle inputs for a specific year and, afterward, it prepares a default controller split into two parts, allowing you to solve each part of the daily Advent of Code challenges. I also prepared some options on how to view your solution.
+
+**My package is currently in a “WIP” (Work in Progress) phase, so please keep this in mind when using it. The controllers are based on a stub, but it is not yet publishable.**
 
 ## Get your Session Cookie
 
