@@ -5,7 +5,7 @@ Every year, I run into the same issues and start “hacking and cracking” as s
 
 This package can download all of your personal puzzle inputs for a specific year and, afterward, it prepares a default controller split into two parts, allowing you to solve each part of the daily Advent of Code challenges. I also prepared some options on how to view your solution.
 
-**My package is currently in a “WIP” (Work in Progress) phase, so please keep this in mind when using it. The controllers are based on a stub, but it is not yet publishable.**
+**My package is currently in a “WIP” (Work in Progress) phase, so please keep this in mind when using it.**
 
 ## Get your Session Cookie
 
