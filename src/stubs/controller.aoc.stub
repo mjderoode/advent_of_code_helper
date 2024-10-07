@@ -7,7 +7,7 @@ use Illuminate\Support\Collection;
 use Illuminate\Support\Benchmark;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Str;
- 
+
 /**
  * AOC DAY {{ DummyDay }} YEAR {{ DummyYear }} 
  */

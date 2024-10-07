@@ -25,8 +25,8 @@ class GenerateControllerLayoutJob implements ShouldQueue
             $this->command->info("- File ($controllerPath) already exists. Skipping...");
             return;
         }
-    
-        $stub = file_get_contents(__DIR__ . '/../stubs/controller.aoc.stub');
+
+        $stub = file_get_contents($this->getStubFilePath());
     
         $stub = str_replace('{{ DummyYear }}', $this->year, $stub);
         $stub = str_replace('{{ DummyDay }}', $this->day, $stub);
@@ -41,5 +41,12 @@ class GenerateControllerLayoutJob implements ShouldQueue
         File::put($controllerPath, $stub);
 
         $this->command->info("Controller layout for year {$this->year} day {$this->day} generated");
+    }
+
+    private function getStubFilePath(): string
+    {
+        $customStubPath = base_path('stubs/vendor/mjderoode/advent_of_code_helper/controller.aoc.stub');
+
+        return file_exists($customStubPath) ? $customStubPath : __DIR__ . '/../stubs/controller.aoc.stub';
     }
 }

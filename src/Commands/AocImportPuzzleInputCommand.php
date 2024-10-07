@@ -25,7 +25,7 @@ class AocImportPuzzleInputCommand extends Command
             $this->error("No session cookie found, set ADVENT_OF_CODE_SESSION_COOKIE in .env");
             $this->newLine();
 
-            $this->info("Go here to find out how to get your session cookie: https://github.com/mjderoode/advent-of-code-helper#how-to-get-your-session_cookie \n End of command");
+            $this->info("Go here to find out how to get your session cookie: https://github.com/mjderoode/advent-of-code-helper (Get Your Session Cookie) \n End of command");
             return;
         }
 

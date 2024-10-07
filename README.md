@@ -54,6 +54,13 @@ The `aoc:try` command is used to test your solutions. This command expects three
 php artisan aoc:try 2023 1 1
 ```
 
+## Publishable assets
+
+Don’t like the stub? No problem! Just run the following command, and the stub will be published, ready for you to edit as you like!
+```bash
+php artisan vendor:publish --tag="stubs-aoc"
+```
+
 ## Try out your solutions 
 
 In this package, you have several options to try out your solutions. The first is through the command line—refer to the `aoc:try` command as explained in the previous section.
