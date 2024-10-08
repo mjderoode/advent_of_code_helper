@@ -1,11 +1,11 @@
 
-# Advent of Code Helper 
+# Advent of Code Helper, Laravel Package
 
-Every year, I run into the same issues and start “hacking and cracking” as soon as Advent of Code begins. Not anymore! I wrote this package with two clear goals: to download your personal puzzle inputs and to prepare controller files so you don’t have to start hacking in your web.php.
+Every year, I run into the same issues and start “hacking and cracking” as soon as Advent of Code begins. Not anymore! I wrote this Laravel package with two clear goals: to download your personal puzzle inputs and to prepare controller files so you don’t have to start hacking in your web.php.
 
-This package can download all of your personal puzzle inputs for a specific year and, afterward, it prepares a default controller split into two parts, allowing you to solve each part of the daily Advent of Code challenges. I also prepared some options on how to view your solution.
+This Laravel package can download all of your personal puzzle inputs for a specific year and, afterward, it prepares a default controller split into two parts, allowing you to solve each part of the daily Advent of Code challenges. I also prepared some options on how to view your solution.
 
-**My package is currently in a “WIP” (Work in Progress) phase, so please keep this in mind when using it.**
+**My Laravel package is currently in a “WIP” (Work in Progress) phase, so please keep this in mind when using it.**
 
 ## Get your Session Cookie
 
@@ -35,7 +35,7 @@ ADVENT_OF_CODE_ROUTING_ENABLED=false
 
 ## Usage/ Examples
 
-The package includes two commands: `aoc:import` and `aoc:try`. 
+The Laravel package includes two commands: `aoc:import` and `aoc:try`. 
 
 The `aoc:import` command is used to download your personal puzzle inputs and prepare the necessary Controller files. This command expects two parameters: the first (year) is mandatory with a default value of 2024, and the second (day) is optional.
 
@@ -63,7 +63,7 @@ php artisan vendor:publish --tag="stubs-aoc"
 
 ## Try out your solutions 
 
-In this package, you have several options to try out your solutions. The first is through the command line—refer to the `aoc:try` command as explained in the previous section.
+In this Laravel package, you have several options to try out your solutions. The first is through the command line—refer to the `aoc:try` command as explained in the previous section.
 
 The second option is to view your solution in the browser. I’ve prepared a specific route for your Advent of Code controllers (see `php artisan route:list`, specifically `aoc.solution`). For example, to view your solution for “year 2016, day 2, part 2,” go to `{{ YOUR APP URL HERE }}/2016/2/2`.
 

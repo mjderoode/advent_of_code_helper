@@ -1,7 +1,7 @@
 {
     "name": "mjderoode/advent_of_code_helper",
-    "description": "Helper package to make the advent of code a bit more \"manageable\"",
-    "keywords": ["aoc","advent of code", "aoc helper", "advent of code helper"],
+    "description": "Laravel package to make the advent of code a bit more \"manageable\"",
+    "keywords": ["aoc","advent of code", "aoc helper", "advent of code helper", "laravel package"],
     "license": "MIT",
     "autoload": {
         "psr-4": {
