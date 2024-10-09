@@ -67,6 +67,14 @@ In this Laravel package, you have several options to try out your solutions. The
 
 The second option is to view your solution in the browser. I’ve prepared a specific route for your Advent of Code controllers (see `php artisan route:list`, specifically `aoc.solution`). For example, to view your solution for “year 2016, day 2, part 2,” go to `{{ YOUR APP URL HERE }}/2016/2/2`.
 
+## TODO's 
+
+#### Tasks
+- [ ]  Refactor code; this one never ends.
+- [ ]  Detach the “GenerateControllerLayoutJob”.
+- [ ]  Make “GenerateControllerLayoutJob” available in its own command. 
+- [ ]  Download all puzzle inputs from the start to the current year? (Not sure yet).
+
 ## Authors
 
 - [@mjderoode (github)](https://github.com/mjderoode)
